@@ -14,7 +14,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        return view('article.create');
+
     }
 
     /**
@@ -24,7 +25,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
