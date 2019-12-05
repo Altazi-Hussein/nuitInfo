@@ -33,10 +33,4 @@ class CreateVotesTable extends Migration
     {
         Schema::dropIfExists('votes');
     }
-
-    public function votes()
-    {
-        return $this->morphTo();
-        return $this->morphMany('App\Comment', 'votable');
-    }
 }

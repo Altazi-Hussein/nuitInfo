@@ -36,9 +36,4 @@ class CreateArticlesTable extends Migration
     {
         Schema::dropIfExists('articles');
     }
-
-    public function votes()
-    {
-        return $this->morphMany('App\Vote', 'votable');
-    }
 }
