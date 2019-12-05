@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Article;
+use Auth;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $articles = Article::all();
+        $str = new Str;
+        return view('article.index', ['articles' => $articles, 'str' => $str]);
     }
 }

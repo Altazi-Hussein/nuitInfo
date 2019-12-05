@@ -30,6 +30,7 @@
                         <input class="mt-3 mb-3 btn btn-success form-control" type="submit" value="Créer l'article">
                     </form>
                     </div>
+                    <a class="btn btn-primary" href="{{ url('article') }}">Retour</a>
                 </div>
             </div>
         </div>

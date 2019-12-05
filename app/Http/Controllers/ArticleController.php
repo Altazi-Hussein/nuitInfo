@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Support\Str;
 
 class ArticleController extends Controller
 {
@@ -15,7 +16,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('article.create');
+        $articles = Article::all();
+        $str = new Str;
+        return view('article.index', ['articles' => $articles, 'str' => $str]);
 
     }
 
@@ -26,7 +29,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-
+        return view('article.create');
     }
 
     /**
