@@ -33,11 +33,8 @@
                             <p class="card-text">{{$str::words($article->content,10)}}</p>
                               <a href="#" class="btn btn-primary">Lire l'article</a>
                             </div>
-                          </div>
+                          </div><br>
                     @endforeach
-                        </tbody>
-                        </thead>
-                    </table>
                     </div>
                 </div>
             </div>
