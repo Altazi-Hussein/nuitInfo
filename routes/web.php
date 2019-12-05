@@ -18,7 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::resource('article/', 'ArticleController');
+Route::resource('article/', 'ArticleController')->except([
+    'show',
+]);
+Route::get('article/{id}', 'ArticleController@show');
+
+Route::post('commentaire/', 'CommentaireController@store');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::match(['get', 'post'], '/botman', 'BotManController@handle');

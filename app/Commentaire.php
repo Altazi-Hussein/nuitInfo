@@ -11,4 +11,9 @@ class Commentaire extends Model
     {
         return $this->belongsTo('Article');
     }
+    
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

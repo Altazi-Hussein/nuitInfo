@@ -40,7 +40,7 @@
                             <h5 class="card-title">{{$article->title}}</h5>
                             <p class="float-right">Créé le {{$article->created_at}}</p>
                             <p class="card-text">{{$str::words($article->content,10)}}</p>
-                            <a href="{{route('article.show')}}" class="btn btn-primary float-right">Lire l'article</a>
+                            <a href="{{ url('article')}}/{{$article->id}}" class="btn btn-primary float-right">Lire l'article</a>
                         </div>
                           </div><br>
                     @endforeach
