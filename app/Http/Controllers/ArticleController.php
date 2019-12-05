@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use Auth;
 
 class ArticleController extends Controller
 {
@@ -36,7 +37,13 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $article = new Article;
+        $article->title = $request->input('title');
+        $article->content = $request->input('content');
+        $article->user_id = Auth::id();
+        $article->save();
+
+        return redirect()->back()->with('success', 'Article ajouté !');
     }
 
     /**
