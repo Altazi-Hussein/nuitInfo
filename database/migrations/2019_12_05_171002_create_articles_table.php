@@ -15,7 +15,10 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->longText('description');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
