@@ -24,6 +24,11 @@ class CreateCommentairesTable extends Migration
         });
     }
 
+    public function votes()
+    {
+        return $this->morphMany('App\Vote', 'votable');
+    }
+
     /**
      * Reverse the migrations.
      *
