@@ -15,8 +15,9 @@ class CreateVotesTable extends Migration
     {
         Schema::create('votes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreign('vote_id')->references('id')->on('vote');
-            $table->foreign('comment_id')->references('id')->on('commentaire');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('comment_id');
+            $table->foreign('comment_id')->references('id')->on('commentaires');
             $table->foreign('user_id')->references('id')->on('users');
             $table->enum('vote', ['upvote', 'downvote']);
             $table->timestamps();
