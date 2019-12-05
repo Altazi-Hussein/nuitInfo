@@ -12,7 +12,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a class="btn btn-primary" href="{{ url('article/create') }}">Ajouter un rendez-vous</a>
+                    <a class="btn btn-primary" href="{{ url('article/create') }}">Ajouter un article</a>
+                    <a href="{{url('article')}}" class="btn btn-primary float-right">Accéder aux articles</a>
                 </div>
             </div>
         </div>

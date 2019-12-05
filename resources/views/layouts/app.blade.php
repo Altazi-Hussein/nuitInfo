@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body style="background: url('{{asset('images/background.jpg')}}'); background-size:cover;">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -73,7 +73,16 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')   
+            @yield('content')
+            <script>
+                    var botmanWidget = {
+                        aboutText: 'ssdsd',
+                        introMessage: "✋ Hi! I'm form ItSolutionStuff.com"
+                    };
+                </script>
+              
+                <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+                
         </main>
     </div>
 </body>

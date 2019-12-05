@@ -20,3 +20,5 @@ Auth::routes();
 
 Route::resource('article/', 'ArticleController');
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::match(['get', 'post'], '/botman', 'BotManController@handle');

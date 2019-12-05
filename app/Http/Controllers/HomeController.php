@@ -24,10 +24,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $r)
     {
-        $articles = Article::all();
-        $str = new Str;
-        return view('article.index', ['articles' => $articles, 'str' => $str]);
+        return view('home');
     }
 }

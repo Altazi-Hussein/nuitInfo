@@ -22,7 +22,15 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Ajouter un article</div> --}}
-
+                {{-- <form class="d-flex" action="{{ action('ArticleController@index')}}" method="GET">
+                    <select class="form-control w-25" name="select">
+                        <option value="title">Titre</option>
+                        <option value="date">Date (récent -> ancien)</option>
+                    </select>
+                    <input class="btn btn-primary" type="submit" value="Valider">
+                </form> --}}
+                <a href="{{url('home')}}" class="btn btn-primary float-right">Accueil</a>
+                    <br>
                     @foreach ($articles as $article)
                     <div class="card" style="width: 50rem;">
                             {{-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
@@ -30,9 +38,10 @@
 
                             <div class="card-body">
                             <h5 class="card-title">{{$article->title}}</h5>
+                            <p class="float-right">Créé le {{$article->created_at}}</p>
                             <p class="card-text">{{$str::words($article->content,10)}}</p>
-                              <a href="#" class="btn btn-primary">Lire l'article</a>
-                            </div>
+                            <a href="{{route('article.show')}}" class="btn btn-primary float-right">Lire l'article</a>
+                        </div>
                           </div><br>
                     @endforeach
                     </div>
