@@ -62,7 +62,7 @@
                                         {{ __('Se déconnecter') }}
                                     </a>
 
-                                <a class="nav-link" href="{{route('user.edit')}}">Paramètres</a>
+                                <a class="nav-link" href="{{-- {{route('user.edit')}} --}}">Paramètres</a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
