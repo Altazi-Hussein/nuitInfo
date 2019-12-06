@@ -23,6 +23,8 @@ Route::resource('article/', 'ArticleController')->except([
 ]);
 Route::get('article/{id}', 'ArticleController@show');
 
+Route::resource('user/', 'UserController')->except(['show', 'index', 'destroy']);
+
 Route::post('commentaire/', 'CommentaireController@store');
 
 Route::get('/home', 'HomeController@index')->name('home');
