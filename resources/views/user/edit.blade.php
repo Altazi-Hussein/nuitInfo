@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-header">Modifier mes données</div>
                     <div class="d-flex row justify-content-center">
-                    <form class="w-75" action="{{ route('UserController@update', ['id' => $user->id])}}" method="post">
+                    <form class="w-75" action="{{ action('UserController@update', ['id' => $user->id])}}" method="post">
                         @csrf
                         <label for="name">Nom</label><input class="form-control" type="text" name="name" id="name">
                         <label for="content">Contenu de l'article</label><textarea class="form-control" name="content" id="content" cols="30" rows="10"></textarea>

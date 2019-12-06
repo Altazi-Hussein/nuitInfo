@@ -34,6 +34,7 @@ Route::post('commentaire/', 'CommentaireController@store');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+Route::get('user/', 'UserController@edit');
+Route::post('user/','UserController@update');
 
 Route::match(['get', 'post'], '/botman', 'BotManController@handle');
