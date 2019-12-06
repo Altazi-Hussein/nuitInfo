@@ -9,7 +9,7 @@ class Vote extends Model
 {
     public function user()
     {
-        return $this->belongTo('User');
+        return $this->belongTo(User::class);
     }
 
     public function votable()

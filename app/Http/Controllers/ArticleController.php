@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Vote;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Str;
@@ -18,6 +19,7 @@ class ArticleController extends Controller
     {
         $articles = Article::simplePaginate(15);
         $str = new Str;
+        
         return view('article.index', ['articles' => $articles, 'str' => $str]);
     }
 
@@ -93,5 +95,29 @@ class ArticleController extends Controller
     public function destroy(Article $article)
     {
         //
+    }
+
+    public function upvote($id)
+    {
+        $vote = new Vote;
+        $vote->user_id = Auth::id();
+        $vote->votable_type="Article";
+        $vote->votable_id=$id;
+        $vote->vote="upvote";  
+        $vote->save();
+        return redirect()->back();
+
+    }
+
+    public function downvote($id)
+    {
+        $vote = new Vote;
+        $vote->user_id = Auth::id();
+        $vote->votable_type="Article";
+        $vote->votable_id=$id;
+        $vote->vote="downvote";   
+        $vote->save();
+        return redirect()->back();
+
     }
 }
