@@ -3,12 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\{Commentaire, Vote};
+use App\{Commentaire, Vote, User};
 use Illuminate\Support\Facades\DB;
 
 class Article extends Model
 {
-    public function comments()
+    public function commentaires()
     {
         return $this->hasMany(Commentaire::class);
     }
@@ -34,4 +34,11 @@ class Article extends Model
     }
 
     
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+
 }

@@ -21,17 +21,39 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Ajouter un article</div>
-                    <div class="d-flex row justify-content-center">
-                    <form class="w-75"action="{{ action('ArticleController@store') }}" method="post">
-                        @csrf
-                        <label for="title">Nom de l'article</label><input class="form-control" type="text" name="title" id="title">
-                        <label for="content">Contenu de l'article</label><textarea class="form-control" name="content" id="content" cols="30" rows="10"></textarea>
-                        <input class="mt-3 mb-3 btn btn-success form-control" type="submit" value="Créer l'article">
-                    </form>
-                    </div>
+                <div class="card-header">Affichage de l'articles</div>
+                <div class="card-body">
+                    <div class="">
+                    <h3>{{$article->title}}</h3>
+                    <p class="m-0">{{$article->user->name}}</p>
+                    <p>Publié le {{$article->created_at}}</p>
+                    <p class="text-justify m-5" style="text-indent:20%;">{{$article->content}}</p>
                     <a class="btn btn-primary" href="{{ url('article') }}">Retour</a>
+                    </div>
                 </div>
+            </div>
+            <div class="card mt-5">
+            <div class="card-body">
+            <form action="{{ action('CommentaireController@store') }}" method="post">
+                @csrf
+                <label for="content">Votre commentaire</label>
+                <textarea class="form-control" name="contenu" id="content"></textarea>
+                <input type="hidden" value="{{$article->id}}" name="article_id">
+                <input class="mt-3 btn btn-success form-control" type="submit" value="Publier l'article">
+           </form>
+        </div>
+        </div>
+
+           @foreach ($commentaires as $comment)
+                <div class="card mt-2">
+                    <div class="card-body">
+                    <h5>{{$comment->user->name}}</h5>
+                    <p>{{$comment->created_at}}</p>
+                    <p>{{$comment->contenu}}</p>
+                    </div>
+                </div>
+           @endforeach
+            </div>
             </div>
         </div>
     </div>

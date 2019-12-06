@@ -47,6 +47,7 @@
                             
                         
                             <a href="" class="btn btn-primary float-right">Lire l'article</a>
+                            <a href="{{ url('article')}}/{{$article->id}}" class="btn btn-primary float-right">Lire l'article</a>
                         </div>
                           </div><br>
                     @endforeach

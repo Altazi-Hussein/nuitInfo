@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-header">Ajouter un article</div>
                     <div class="d-flex row justify-content-center">
-                    <form class="w-75"action="{{ action('ArticleController@store') }}" method="post">
+                    <form class="w-75" action="{{ action('ArticleController@store') }}" method="post">
                         @csrf
                         <label for="title">Nom de l'article</label><input class="form-control" type="text" name="title" id="title">
                         <label for="content">Contenu de l'article</label><textarea class="form-control" name="content" id="content" cols="30" rows="10"></textarea>
