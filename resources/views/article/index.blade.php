@@ -35,12 +35,18 @@
                     <div class="card" style="width: 50rem;">
                             {{-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
                             <span class="glyphicon glyphicon-nom-image"></span>
-
+                            
+                                {{ csrf_field() }}
                             <div class="card-body">
                             <h5 class="card-title">{{$article->title}}</h5>
                             <p class="float-right">Créé le {{$article->created_at}}</p>
                             <p class="card-text">{{$str::words($article->content,10)}}</p>
-                            <a href="{{route('article.show')}}" class="btn btn-primary float-right">Lire l'article</a>
+                            <a href="article/{{$article->id}}/upvote"> + </a>
+                            <p> {{$article->getScore()}}
+                            <a href="article/{{$article->id}}/downvote"> - </a>
+                            
+                        
+                            <a href="" class="btn btn-primary float-right">Lire l'article</a>
                         </div>
                           </div><br>
                     @endforeach

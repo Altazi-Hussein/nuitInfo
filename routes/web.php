@@ -17,8 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
+Route::get('article/{id}/upvote', 'ArticleController@upvote');
+Route::get('article/{id}/downvote', 'ArticleController@downvote');
 Route::resource('article/', 'ArticleController');
 Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 Route::match(['get', 'post'], '/botman', 'BotManController@handle');
