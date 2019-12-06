@@ -39,7 +39,7 @@
                 <label for="content">Votre commentaire</label>
                 <textarea class="form-control" name="contenu" id="content"></textarea>
                 <input type="hidden" value="{{$article->id}}" name="article_id">
-                <input class="mt-3 btn btn-success form-control" type="submit" value="Publier l'article">
+                <input class="mt-3 btn btn-success form-control" type="submit" value="Publier le commentaire">
            </form>
         </div>
         </div>

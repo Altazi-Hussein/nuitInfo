@@ -63,39 +63,31 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background: url('{{asset('images/background.jpg')}}'); background-size:cover;">
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
+            <div class="content">
+                
+                <div style="color: white;"class="title m-b-md">
+                    CroustiCrous
+                </div>
+                <div class="links">
+                        <h2 style="color:white;">Un forum d'entraide pour tous les étudiants</h2>
+                </div>
+                <div class="card">
+                @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a style=""class="btn btn-primary p-3" href="{{ url('/home') }}">Accueil</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a class="btn btn-success" href="{{ route('login') }}">Connexion</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a class="btn btn-primary" href="{{ route('register') }}">Inscription</a>
                         @endif
                     @endauth
+                @endif
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
             </div>
+                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
         </div>
     </body>
 </html>

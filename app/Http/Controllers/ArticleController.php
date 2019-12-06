@@ -103,10 +103,10 @@ class ArticleController extends Controller
         $vote->user_id = Auth::id();
         $vote->votable_type="Article";
         $vote->votable_id=$id;
-        $vote->vote="upvote";  
+        $vote->vote="upvote";
+        $count = Vote::where('user_id', '=', Auth::id())->count();
         $vote->save();
         return redirect()->back();
-
     }
 
     public function downvote($id)

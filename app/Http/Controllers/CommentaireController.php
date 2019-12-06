@@ -42,7 +42,7 @@ class CommentaireController extends Controller
         $commentaire->article_id = $r->input('article_id');
         $commentaire->save();
 
-        return redirect()->back()->with('success', 'Commentaire ajouté !');
+        return redirect()->back();
     }
 
     /**

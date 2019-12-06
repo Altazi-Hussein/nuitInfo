@@ -40,9 +40,9 @@
                             <p class="float-right">Créé le {{$article->created_at}}</p>
                             <p class="card-text">{{$str::words($article->content,10)}}</p>
                             <div class="align-items-end d-flex">
-                            <a class="btn btn-success m-2"href="article/{{$article->id}}/upvote"> + </a>
-                            <h2>{{$article->getScore()}}</h2>
                             <a class="btn btn-danger m-2"href="article/{{$article->id}}/downvote"> - </a>
+                            <h2>{{$article->getScore()}}</h2>
+                            <a class="btn btn-success m-2"href="article/{{$article->id}}/upvote"> + </a>
                             </div>
                             {{-- <a href="" class="btn btn-primary float-right">Lire l'article</a> --}}
                             <a href="{{ url('article')}}/{{$article->id}}" class="btn btn-primary float-right">Lire l'article</a>
