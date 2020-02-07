@@ -1,78 +1,49 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Nuit de l'info – 5 au 6 décembre 2019
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Présentation de la nuit de l'info
 
-## About Laravel
+La Nuit se déroule tous les ans, du premier jeudi du mois de décembre, coucher du soleil, jusqu'au lever du soleil le lendemain matin.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+La Nuit de l’Info est une compétition nationale qui réunit étudiants, enseignants et entreprises pour travailler ensemble sur le développement d’une application web.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Les participants ont la durée d'une nuit pour proposer, implémenter et packager une application Web 2.0.
+Durant cette nuit, des partenaires lancent des défis (par exemple : interface web la plus ergonomique, meilleure architecture du système, meilleure collaboration, etc.) aux équipes participantes, et proposent des prix pour les équipes ayant le mieux réussi.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+La nuit est aussi l'occasion de rencontres et discussions avec les entreprises, les ingénieurs et les chefs d'entreprises qui viennent soutenir les étudiants, voire leur donner quelques conseils pour mieux relever les défis.
 
-## Learning Laravel
+## Sujet 2019 et axe abordé par l'équipe
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Le sujet de la nuit de l'info en 2019 consistait à réaliser un site Web sur lequel seraient mis en place, par quelque moyen que ce soit, des articles et des sujets à visées informatives à propos des différents aspects de la vie étudiante.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+En prenant en compte la diversité de profils présent sur un campus (plus spécifiquement celui de la Doua), il fallait trouver les axes les plus intéressants à aborder sur le site Web afin de proposer aux étudiants en situation difficile (que ce soit d'un point de vue financier, psychologique, dû à une source de stress, problèmes personnels, etc...) des solutions et une sorte de première aide grâce à laquelle il leur serait possible de mieux appréhender leurs problèmes.
 
-## Laravel Sponsors
+Après analyse de ce sujet, notre groupe pris la décision de réaliser un site Web au concept plutôt spécifique, à savoir:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+N'importe quel étudiant est en mesure de créer un compte sur le site, en saisissant certaines informations supplémentaires (si bourse perçue, le montant actuel, situation, commentaire sur les problèmes rencontrés s'il y en a).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+L'idée est par la suite celle d'une communauté étudiante quasiment auto-gérée, à la manière d'un site comme Reddit, mais orienté sur les besoins spécifiques des étudiants et des problèmes qu'ils sont susceptibles de rencontrer.
 
-## Contributing
+Ainsi, n'importe quel étudiant, sur notre site, serait en mesure de poster un article ou une petite astuce (de motivation personnelles, d'aide psychologique, de conseil, d'astuces face à la précarité, etc...). Son post serait ensuite évalué par la communauté, à savoir down-vote ou up-vote.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+De cette manière les articles les plus intéressants pour les étudiants ou les plus susceptibles d'aider un maximum de monde seraient naturellement affichés en haut de la page d'accueil selon ce que la communauté du site déciderait.
 
-## Code of Conduct
+## Stade final du projet
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Le but de la Nuit de l'Info étant de réaliser un projet en une seule nuit, il est évident que seuls certains aspects étaient possible à implémenter dans ce temps.
 
-## Security Vulnerabilities
+L'aspect graphique, élaboré avec Bootstrap, fut géré par Ali Hussein, dans l'optique d'avoir une première ébauche qui serait visusellement plus ergonomique et attractive d'un point de vue des étudiants (bien que, cette dernière n'étant pas primordiale pour un projet de ce type, elle fut réalisée dans état le plus basique).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Le site Web est, d'une manière générale, fonctionnel, en ce sens qu'il permet d'inscrire et se connecter à son compte, puis de poster des articles qui peuvent ensuite être évalués par la communauté (ils seront alors selon le nombre de vote positionnés plus ou moins en haut de la page d'accueil).
 
-## License
+Enfin, un système de commentiare est également disponible, et chacun est libre de commenter en dessous de n'importe quel article. Ces commentaires sont également triés selon le nombre d'upvote/downvote qu'ils obtiennent, et donc leur pertinence.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Réalisation du projet
+
+HUSSEIN Ali
+
+DO ESPIRITO SANTO Valentin
+
+MACE Lucas
+
+
+*Rédaction: HUSSEIN Ali* 
