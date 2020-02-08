@@ -35,7 +35,7 @@ L'aspect graphique, élaboré avec Bootstrap, fut géré par Ali Hussein, dans l
 
 Le site Web est, d'une manière générale, fonctionnel, en ce sens qu'il permet d'inscrire et se connecter à son compte, puis de poster des articles qui peuvent ensuite être évalués par la communauté (ils seront alors selon le nombre de vote positionnés plus ou moins en haut de la page d'accueil).
 
-Enfin, un système de commentiare est également disponible, et chacun est libre de commenter en dessous de n'importe quel article. Ces commentaires sont également triés selon le nombre d'upvote/downvote qu'ils obtiennent, et donc leur pertinence.
+Enfin, un système de commentaire est également disponible, et chacun est libre de commenter en dessous de n'importe quel article. Ces commentaires sont également triés selon le nombre d'upvote/downvote qu'ils obtiennent, et donc leur pertinence.
 
 ## Réalisation du projet
 
