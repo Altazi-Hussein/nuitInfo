@@ -13,9 +13,9 @@ La nuit est aussi l'occasion de rencontres et discussions avec les entreprises, 
 
 ## Sujet 2019 et axe abordé par l'équipe
 
-Le sujet de la nuit de l'info en 2019 consistait à réaliser un site Web sur lequel seraient mis en place, par quelque moyen que ce soit, des articles et des sujets à visées informatives à propos des différents aspects de la vie étudiante.
+Le sujet de la nuit de l'info en 2019 consistait à réaliser un site Web sur lequel seraient mis en place, par quelque moyen que ce soit, des articles et des sujets à visée informative à propos des différents aspects de la vie étudiante.
 
-En prenant en compte la diversité de profils présent sur un campus (plus spécifiquement celui de la Doua), il fallait trouver les axes les plus intéressants à aborder sur le site Web afin de proposer aux étudiants en situation difficile (que ce soit d'un point de vue financier, psychologique, dû à une source de stress, problèmes personnels, etc...) des solutions et une sorte de première aide grâce à laquelle il leur serait possible de mieux appréhender leurs problèmes.
+En prenant en compte la diversité de profils présents sur un campus (plus spécifiquement celui de la Doua), il fallait trouver les axes les plus intéressants à aborder sur le site Web afin de proposer aux étudiants en situation difficile (que ce soit d'un point de vue financier, psychologique, dû à une source de stress, problèmes personnels, etc...) des solutions et une sorte de première aide grâce à laquelle il leur serait possible de mieux appréhender leurs problèmes.
 
 Après analyse de ce sujet, notre groupe pris la décision de réaliser un site Web au concept plutôt spécifique, à savoir:
 
